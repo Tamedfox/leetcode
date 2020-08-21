@@ -37,7 +37,7 @@ public class MaxSubArray {
                 //小于0，累赘，放弃从nums[i]开始再计算
                 res = nums[i];
             }
-            max = Math.max(res,0);
+            max = Math.max(res,max);
         }
         return max;
     }
