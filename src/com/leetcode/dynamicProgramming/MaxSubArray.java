@@ -27,7 +27,7 @@ public class MaxSubArray {
 
     public int maxSubArray(int[] nums) {
         int res = nums[0];
-        int max = 0;
+        int max = nums[0];
         for(int i = 1; i < nums.length; i++) {
             if(nums[i-1] > 0){
                 //大于0则相加，将nums[i]置为其和
